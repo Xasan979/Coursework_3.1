@@ -9,13 +9,13 @@
 
 ## Содержание
 * [Setup](#setup)
-* [Краткое описание](#description)
+* [Short description](#description)
 * [TODO](#todo)
 
 
 <a id="setup"></a>
 ## Setup
-## Как запустить:
+### Как запустить:
    Создайте venv и установите требования
    
    cd (путь к папки с проектом)
