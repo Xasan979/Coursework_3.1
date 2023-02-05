@@ -1,10 +1,11 @@
-# SkyProgram
+# Coursework_3.1
 ```
 ╭═══════════════╮   ╭═══════════════╮
 │ Made by V_E_K │   │ version 0.0.1 │
 ╰───────────────╯   ╰───────────────╯
 ```
-
+## Задание 
+    https://disk.yandex.ru/d/5Qx3bKTA7gVAug
 
 ## Содержание
 * [Setup](#setup)
@@ -41,6 +42,7 @@
           scoop install allure
           
 ## Провести тест:
+   *в папке config.py поменять пути
    В командной строке
    
           python -m pytest --alluredir=test_results/ tests/comments_dao_test.py tests/api_test.py 
