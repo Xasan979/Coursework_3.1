@@ -30,7 +30,7 @@
           .\env\Scripts\activate
           py -m pip install -r requirements.txt
           
-## Получение отчетов: 
+### Получение отчетов: 
    Установка allure 
    
    В командной строке
@@ -41,14 +41,14 @@
        Windows 
           scoop install allure
           
-## Провести тест:
+### Провести тест:
    *в папке config.py поменять пути
    
    В командной строке
    
           python -m pytest --alluredir=test_results/ tests/comments_dao_test.py tests/api_test.py 
           
-## Сгенерировать отчет:
+### Сгенерировать отчет:
    В командной строке 
    
           cd (путь к папки с проектом)  
