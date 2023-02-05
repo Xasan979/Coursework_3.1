@@ -43,6 +43,7 @@
           
 ## Провести тест:
    *в папке config.py поменять пути
+   
    В командной строке
    
           python -m pytest --alluredir=test_results/ tests/comments_dao_test.py tests/api_test.py 
