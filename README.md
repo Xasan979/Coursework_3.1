@@ -1,10 +1,10 @@
 # SkyProgram
 ```
-╭══════════════╮   ╭═══════════════╮
-│ Made by YuZu │   │ version 0.0.1 │
-╰──────────────╯   ╰───────────────╯
+╭═══════════════╮   ╭═══════════════╮
+│ Made by V_E_K │   │ version 0.0.1 │
+╰───────────────╯   ╰───────────────╯
 ```
-В этой курсовой нам (мне) надо было сделать ~~настоящий~~ инстаграмм))
+
 
 ## Содержание
 * [Setup](#setup)
@@ -14,20 +14,42 @@
 
 <a id="setup"></a>
 ## Setup
+## Как запустить:
+   Создайте venv и установите требования
+   
+   cd (путь к папки с проектом)
+       
+       Mac OS
+          python3 -m venv env
+          source env/bin/activate - for Unix or MacOS
+          pip install -r requirements.txt
+  
+        Windows
+          py -m venv env
+          .\env\Scripts\activate
+          py -m pip install -r requirements.txt
+          
+## Получение отчетов: 
+   Установка allure 
+   
+   В командной строке
+   
+       Mac OS
+          brew install allure
 
-### Минимальные требования:
-* Python 3.10 и выше.
-* Браузер
-* Золотые руки)
-
-### Как запустить проект?
-1. Скачать
-2. Открыть консоль
-3. Перейти в папку проекта (через консоль)
-4. Ввести: `pip install -r requirements.txt` (установка нужных библиотек)
-5. Ввести: `python run.py` (запуск программы)
-
-При повторном запуске `pip install -r requirements.txt` можно не прописывать :)
+       Windows 
+          scoop install allure
+          
+## Провести тест:
+   В командной строке
+   
+          python -m pytest --alluredir=test_results/ tests/comments_dao_test.py tests/api_test.py 
+          
+## Сгенерировать отчет:
+   В командной строке 
+   
+          cd (путь к папки с проектом)  
+          allure serve test_results/          
 
 ### Примечания
 После запуска, нужно перейти в браузере по адресу <a href="http://127.0.0.1:5000/" target="_blank">http://127.0.0.1:5000/</a>.
@@ -78,7 +100,7 @@
 
 <a id="todo"></a>
 ## TODO
-- [x] Более-менее работает)
+- [x] Основные функции реализованны 
 - [ ] Достаточно комментариев к коду
 - [x] Страницы
   - [x] Главная
@@ -109,5 +131,4 @@
   - [x] Тесты для api
   - [x] Тесты для comments_dao
   - [x] Тесты для posts_dao
-  - [ ] Тесты для bookmarks_dao (еще не сделаны)
-  - [ ] Тесты для text_dao (еще не сделаны)
+
